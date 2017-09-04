@@ -1,9 +1,6 @@
-# some_modules
 #!/bin/bash
 ################################################################################
 # Script for Installation: some odoo modules
-
-#
 ################################################################################
  
 ##fixed parameters
@@ -28,13 +25,9 @@ sudo git clone --branch 8.0 https://github.com/OCA/partner-contact.git $OE_HOME/
 sudo git clone --branch 8.0 https://github.com/OCA/server-tools.git $OE_HOME/server-tools
 sudo git clone --branch 8.0 https://github.com/OCA/web.git $OE_HOME/web
 sudo git clone --branch 8.0 https://github.com/OCA/bank-payment.git $OE_HOME/bank-payment
-
-
 sudo git clone --branch 8.0 https://github.com/OCA/pos.git $OE_HOME/pos
 sudo git clone --branch 8.0 https://github.com/OCA/bank-statement-import.git $OE_HOME/bank-statement-import
-
-sudo git clone https://github.com/fgarcia-humanoide/modulos.git $OE_HOME/modulos
-
+sudo git clone https://github.com/inforcad/modulos.git $OE_HOME/modulos
 
 echo -e "\n---- Create some links ----"
 sudo ln -s $OE_HOME/l10n-spain/account_balance_reporting/ $OE_HOME/custom/addons/
@@ -68,15 +61,10 @@ sudo ln -s $OE_HOME/account-financial-tools/account_journal_always_check_date $O
 sudo ln -s $OE_HOME/account-financial-tools/account_chart_update $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/account-financial-tools/account_invoice_constraint_chronology $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/account-financial-tools/account_invoice_currency $OE_HOME/custom/addons/
-
 sudo ln -s $OE_HOME/account-financial-reporting/account_export_csv $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/account-financial-reporting/account_move_line_report_xls $OE_HOME/custom/addons/
-
-
 sudo ln -s $OE_HOME/bank-statement-import/account_bank_statement_import/ $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/pos/pos_pricelist/ $OE_HOME/custom/addons/
-
-
 sudo ln -s $OE_HOME/l10n-spain/account_balance_reporting_xls/ $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/bank-payment/account_banking_mandate/ $OE_HOME/custom/addons/ 
 sudo ln -s $OE_HOME/bank-payment/account_banking_pain_base/ $OE_HOME/custom/addons/
@@ -91,19 +79,13 @@ sudo ln -s $OE_HOME/knowledge/document_page/ $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/knowledge/document_url/ $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/reporting-engine/report_custom_filename/ $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/reporting-engine/report_xls/ $OE_HOME/custom/addons/
-
 sudo ln -s $OE_HOME/account-payment/account_due_list $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/account-payment/account_due_list_payment_mode $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/bank-payment/account_payment_partner $OE_HOME/custom/addons/
-
 sudo ln -s $OE_HOME/modulos/ $OE_HOME/custom/addons/
-
 
 echo -e "\n---- Setting permissions on home folder ----"
 sudo chown -R $OE_USER:$OE_USER $OE_HOME/*
 
-
 echo "Done! Some modules installed"
 echo "Recuerda wkhtmltopdf 0.12.1 System parameters -> key:report.url value:http://localhost:8069"
-
-
