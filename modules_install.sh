@@ -52,12 +52,7 @@ sudo ln -s $OE_HOME/l10n-spain/l10n_es_aeat_mod349/ $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/l10n-spain/l10n_es_aeat_mod111/ $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/l10n-spain/l10n_es_aeat_mod115/ $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/l10n-spain/l10n_es_account_bank_statement_import_n43/ $OE_HOME/custom/addons/
-
 sudo ln -s $OE_HOME/l10n-spain/l10n_es_pos/ $OE_HOME/custom/addons/
-
-
-sudo ln -s $OE_HOME/libro_diario_7/l10n_es_account_financial_report/ $OE_HOME/custom/addons/
-
 sudo ln -s $OE_HOME/l10n-spain/l10n_es_fiscal_year_closing/ $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/l10n-spain/l10n_es_partner/ $OE_HOME/custom/addons/
 sudo ln -s $OE_HOME/l10n-spain/l10n_es_partner_mercantil/ $OE_HOME/custom/addons/
